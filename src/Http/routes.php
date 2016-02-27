@@ -11,5 +11,4 @@
 |
 */
 
-
 Route::resource('dashboard', 'Askedio\Laravelcp\Http\Controllers\HomeController');

@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name' => 'My App',
+    'name'  => 'My App',
     'title' => 'My App',
 ];
