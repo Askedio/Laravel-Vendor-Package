@@ -1,4 +1,4 @@
-# Laravel 5.1 Vendor Package Example
+# Laravel 5.2 Vendor Package Example
 ## An Example on how-to create a Vendor Package for Composer
 
 This is the start of the LaravelCP project but it is a generic vendor package that you can install with composer.
@@ -17,14 +17,14 @@ The install directions are how-to install this as my vendor package. Ideally you
 * Install with commands like below, but with your names and revisions
 
 # Installation
-## Add to composer.json
+
  
-    "askedio/laravelcp": "laravel5-vendor-package",
+    composer require askedio/laravel-vendor-package
 
 
 ## Register with config/app.php
 
-    Askedio\Laravelcp\Providers\LaravelcpServiceProvider::class,
+    Askedio\LaravelVendorPackage\Providers\GenericServiceProvider::class,
 
 ## Test
 

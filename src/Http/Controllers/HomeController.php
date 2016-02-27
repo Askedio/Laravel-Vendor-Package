@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\Laravelcp\Http\Controllers;
+namespace Askedio\LaravelVendorPackage\Http\Controllers;
 
 use Illuminate\Routing\Controller as Controller;
 

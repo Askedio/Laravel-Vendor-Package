@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\Laravelcp\Seeds;
+namespace Askedio\LaravelVendorPackage\Seeds;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
@@ -16,6 +16,6 @@ class LaravelcpDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call('Askedio\Laravelcp\Seeds\FoobarTableSeeder');
+        // $this->call('Askedio\LaravelVendorPackage\Seeds\FoobarTableSeeder');
     }
 }

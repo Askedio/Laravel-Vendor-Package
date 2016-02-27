@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\Laravelcp\Jobs;
+namespace Askedio\LaravelVendorPackage\Jobs;
 
 use Illuminate\Bus\Queueable;
 

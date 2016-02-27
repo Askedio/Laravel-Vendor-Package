@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\Laravelcp\Providers;
+namespace Askedio\LaravelVendorPackage\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Routing\Router;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'Askedio\Laravelcp\Http\Controllers';
+    protected $namespace = 'Askedio\LaravelVendorPackage\Http\Controllers';
 
     /**
      * Define your module's route model bindings, pattern filters, etc.

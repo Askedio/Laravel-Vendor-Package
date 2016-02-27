@@ -1,13 +1,13 @@
 <?php
 
-namespace Askedio\Laravelcp\Providers;
+namespace Askedio\LaravelVendorPackage\Providers;
 
 use App;
 use Config;
 use Illuminate\Support\ServiceProvider;
 use Lang;
 
-class LaravelcpServiceProvider extends ServiceProvider
+class GenericServiceProvider extends ServiceProvider
 {
     /**
    * Register the service provider.

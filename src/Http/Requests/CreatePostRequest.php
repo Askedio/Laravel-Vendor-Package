@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\Laravelcp\Http\Requests;
+namespace Askedio\LaravelVendorPackage\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

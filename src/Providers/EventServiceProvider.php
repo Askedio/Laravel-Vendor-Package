@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\Laravelcp\Providers;
+namespace Askedio\LaravelVendorPackage\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'Askedio\Laravelcp\Events\SomeEvent' => [
-            'Askedio\Laravelcp\Listeners\EventListener',
+        'Askedio\LaravelVendorPackage\Events\SomeEvent' => [
+            'Askedio\LaravelVendorPackage\Listeners\EventListener',
         ],
     ];
 
