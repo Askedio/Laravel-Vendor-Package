@@ -1,17 +1,16 @@
 {
-    "name": "askedio/laravelcp",
-    "description": "A Modular Laravel Control Panel.",
-    "keywords": ["control panel", "laravel"],
+    "name": "askedio/laravel-vendor-package",
+    "description": "A Vendor Package Example",
+    "keywords": ["laravel"],
     "license": "MIT",
     "type": "library",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*",
-        "laravelcollective/html": "5.1.*"
+        "laravel/framework": "5.2.*",
      },
     "autoload": {
         "psr-4": {
-            "Askedio\\Laravelcp\\": "src/"
+            "Askedio\\LaravelVendorPackage\\": "src/"
         }
     }
 }
