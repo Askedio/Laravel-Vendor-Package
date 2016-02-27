@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'dashboard' => 'Dashboard'
+    'dashboard' => 'Dashboard',
 ];
