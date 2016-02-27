@@ -8,8 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        //dd('Hello World, index :D');
-        return view('lcp::welcome');
+        return view('welcome');
     }
 
     public function create()
