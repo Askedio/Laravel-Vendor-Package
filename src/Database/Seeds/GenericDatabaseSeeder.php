@@ -5,7 +5,7 @@ namespace Askedio\LaravelVendorPackage\Seeds;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 
-class LaravelcpDatabaseSeeder extends Seeder
+class GenericDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
