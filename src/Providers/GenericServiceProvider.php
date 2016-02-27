@@ -16,7 +16,6 @@ class GenericServiceProvider extends ServiceProvider
    */
   public function register()
   {
-      App::register('Collective\Html\HtmlServiceProvider');
   }
 
   /**
@@ -26,20 +25,16 @@ class GenericServiceProvider extends ServiceProvider
    */
   public function boot()
   {
-      $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-      $loader->alias('Html', 'Collective\Html\HtmlFacade');
-      $loader->alias('Form', 'Collective\Html\FormFacade');
-
       if (!$this->app->routesAreCached()) {
           require realpath(__DIR__.'/../Http/routes.php');
       }
 
-      $this->loadTranslationsFrom(realpath(__DIR__.'/../Resources/Lang'), 'lcp');
+      $this->loadTranslationsFrom(realpath(__DIR__.'/../Resources/Lang'), 'LaravelVendorPackage');
 
-      $this->loadViewsFrom(realpath(__DIR__.'/../Resources/Views'), 'lcp');
+      $this->loadViewsFrom(realpath(__DIR__.'/../Resources/Views'), 'LaravelVendorPackage');
 
       $this->publishes([
-      realpath(__DIR__.'/../Resources/Views') => base_path('resources/views/vendor/askedio/laravelcp'),
+      realpath(__DIR__.'/../Resources/Views') => base_path('resources/views/vendor/askedio/laravelvendorpackage'),
     ], 'views');
 
       $this->publishes([
