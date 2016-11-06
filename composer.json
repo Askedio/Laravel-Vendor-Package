@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Askedio\\LaravelVendorPackage\\": "src/"
+            "Askedio\\LaravelVendorPackage\\": "app/"
         }
     },
     "autoload-dev": {
