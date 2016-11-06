@@ -15,16 +15,21 @@ Use this package to rapidly develop new packages to share among your projects - 
 * Install with commands like below, but with your names and revisions
 
 # Installation
-
+Install a fresh copy of Laravel then require the package.
 
     composer require askedio/laravel-vendor-package:dev-master
 
 
 ## Register with config/app.php
+Register the service providers to enable the package.
 
-    Askedio\LaravelVendorPackage\Providers\GenericServiceProvider::class,
+    Askedio\LaravelVendorPackage\Providers\AppServiceProvider::class,
+
+    // If you plan to do routing:
+    Askedio\LaravelVendorPackage\Providers\RouteServiceProvider::class,
 
 ## Test
+Test the actual laravel installation.
 
     php artisan serv
 
@@ -37,3 +42,6 @@ Browse to http://localhost:8000/dashboard
 ## Seed
         php artisan db:seed
 
+# Test the package itself
+    composer install
+    vendor/bin/phpunit

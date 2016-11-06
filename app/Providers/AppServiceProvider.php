@@ -7,7 +7,7 @@ use Config;
 use Illuminate\Support\ServiceProvider;
 use Lang;
 
-class PackageServiceProvider extends ServiceProvider
+class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.
@@ -35,9 +35,9 @@ class PackageServiceProvider extends ServiceProvider
 
         $this->publishes([realpath(__DIR__.'/../../resources/views') => base_path('resources/views/vendor/askedio/laravelvendorpackage')], 'views');
 
-        $this->publishes([realpath(__DIR__.'/../../resources/Assets') => public_path('assets')], 'public');
+        $this->publishes([realpath(__DIR__.'/../../resources/assets') => public_path('assets')], 'public');
 
-        $this->publishes([realpath(__DIR__.'/../../resources/Config') => config_path('')], 'config');
+        $this->publishes([realpath(__DIR__.'/../../resources/config') => config_path('')], 'config');
 
         $this->publishes([realpath(__DIR__.'/../database/migrations') => database_path('migrations')], 'migrations');
 
