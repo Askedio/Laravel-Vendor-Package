@@ -11,7 +11,7 @@ Use this package to help develop new packages to share among your projects -- or
 2. Rename the following to match your repository & package name:
     * namespace: `Askedio\LaravelVendorPackage`
     * composer package name: `askedio/laravel-vendor-package`
-    * resource namespakce: `LaravelVendorPackage`
+    * resource namespace: `LaravelVendorPackage`
 3. Add to https://packagist.org.
 4. Using your details, install with commands below.
 
@@ -27,14 +27,13 @@ Register the service providers to enable the package:
 ```
 Askedio\LaravelVendorPackage\Providers\AppServiceProvider::class,
 ```
-## Test
-Test the actual laravel installation:
+## Test with Laravel
 ```
 php artisan serv
 ```
 Browse to http://localhost:8000/dashboard
 
-# Test the package itself
+# Test the Package
 In the packages repository folder:
 ```
 composer install
