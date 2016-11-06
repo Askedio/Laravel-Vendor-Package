@@ -1,4 +1,4 @@
-# Laravel 5.2 Vendor Package Example
+# Laravel 5.3 Vendor Package Example
 ## An Example on how-to create a Vendor Package for Composer
 
 "Packages are the primary way of adding functionality to Laravel. Packages might be anything from a great way to work with dates like Carbon, or an entire BDD testing framework like Behat."
@@ -16,7 +16,7 @@ Use this package to rapidly develop new packages to share among your projects - 
 
 # Installation
 
- 
+
     composer require askedio/laravel-vendor-package:dev-master
 
 
@@ -31,9 +31,9 @@ Use this package to rapidly develop new packages to share among your projects - 
 Browse to http://localhost:8000/dashboard
 
 ## Publish
-        php artisan vendor:publish 
+        php artisan vendor:publish
 ## Migrate
         php artisan migrate
 ## Seed
-        php artisan db:seed 
+        php artisan db:seed
 
