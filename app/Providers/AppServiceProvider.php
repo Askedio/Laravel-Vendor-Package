@@ -39,8 +39,8 @@ class AppServiceProvider extends ServiceProvider
 
         $this->publishes([realpath(__DIR__.'/../../resources/config') => config_path('')], 'config');
 
-        $this->publishes([realpath(__DIR__.'/../database/migrations') => database_path('migrations')], 'migrations');
+        $this->publishes([realpath(__DIR__.'/../../database/migrations') => database_path('migrations')], 'migrations');
 
-        $this->publishes([realpath(__DIR__.'/../database/seeds') => database_path('seeds')], 'seeds');
+        $this->publishes([realpath(__DIR__.'/../../database/seeds') => database_path('seeds')], 'seeds');
     }
 }
