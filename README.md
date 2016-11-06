@@ -27,6 +27,11 @@ Register the service providers to enable the package:
 ```
 Askedio\LaravelVendorPackage\Providers\AppServiceProvider::class,
 ```
+
+Autoload it:
+```
+composer dumpautoload
+```
 ## Test with Laravel
 ```
 php artisan serv
