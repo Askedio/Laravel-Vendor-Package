@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         if (!$this->app->routesAreCached()) {
-            require realpath(__DIR__.'/../Http/routes.php');
+            require realpath(__DIR__.'/../Http/web.php');
         }
 
         $this->loadTranslationsFrom(realpath(__DIR__.'/../../resources/lang'), 'LaravelVendorPackage');

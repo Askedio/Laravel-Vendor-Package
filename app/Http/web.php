@@ -11,4 +11,5 @@
 |
 */
 
-Route::resource('dashboard', 'Askedio\LaravelVendorPackage\Http\Controllers\HomeController');
+Route::get('dashboard', '\Askedio\LaravelVendorPackage\Http\Controllers\HomeController@index');
+
