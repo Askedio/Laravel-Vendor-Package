@@ -22,6 +22,8 @@ abstract class TestCase extends \Illuminate\Foundation\Testing\TestCase
 
         $app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 
+        $app->register(\Askedio\LaravelVendorPackage\Providers\PackageServiceProvider::class);
+
         return $app;
     }
 }

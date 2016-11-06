@@ -7,7 +7,7 @@ use Config;
 use Illuminate\Support\ServiceProvider;
 use Lang;
 
-class GenericServiceProvider extends ServiceProvider
+class PackageServiceProvider extends ServiceProvider
 {
     /**
    * Register the service provider.
